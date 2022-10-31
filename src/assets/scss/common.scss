@@ -1,0 +1,27 @@
+body {
+    background: var(--bg-dark);
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    // background-color: rgba(255,255,255,0.3);
+}
+
+// cont__title
+.cont__title {
+    padding: 13vmax 0;
+    font-size: 80px;
+    font-family: var(--font-main);
+    color: var(--white);
+    line-height: 1;
+    text-transform: uppercase;
+
+    strong {
+        display: block;
+    }
+}
+
+// cont__contact
+.cont__contact {}

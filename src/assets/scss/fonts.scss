@@ -1,0 +1,83 @@
+@font-face {
+    font-family: 'SaolDisplay-Regular';
+    font-weight: normal;
+    font-style: normal;
+    src: url('../fonts/SaolDisplay-Regular.eot');
+    src: url('../fonts/SaolDisplay-Regular.eot?#iefix') format('embeded-opentype'),
+        url('../fonts/SaolDisplay-Regular.woff2') format('woff2'),
+        url('../fonts/SaolDisplay-Regular.woff') format('woff'),
+        url('../fonts/SaolDisplay-Regular.ttf') format('truetype');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'PlayfairDisplay-Regular';
+    font-weight: normal;
+    font-style: normal;
+    src: url('../fonts/PlayfairDisplay-Regular.eot');
+    src: url('../fonts/PlayfairDisplay-Regular.eot?#iefix') format('embeded-opentype'),
+        url('../fonts/PlayfairDisplay-Regular.woff2') format('woff2'), // 최신버전
+        url('../fonts/PlayfairDisplay-Regular.woff') format('woff'),
+        url('../fonts/PlayfairDisplay-Regular.ttf') format('truetype');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Rajdhani-Display';
+    font-weight: 300;
+    font-style: normal;
+    src: url('../fonts/Rajdhani-Light.eot');
+    src: url('../fonts/Rajdhani-Light.eot?#iefix') format('embeded-opentype'),
+        url('../fonts/Rajdhani-Light.woff2') format('woff2'), // 최신버전
+        url('../fonts/Rajdhani-Light.woff') format('woff'),
+        url('../fonts/Rajdhani-Light.ttf') format('truetype');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Rajdhani-Display';
+    font-weight: 400;
+    font-style: normal;
+    src: url('../fonts/Rajdhani-Medium.eot');
+    src: url('../fonts/Rajdhani-Medium.eot?#iefix') format('embeded-opentype'),
+        url('../fonts/Rajdhani-Medium.woff2') format('woff2'), // 최신버전
+        url('../fonts/Rajdhani-Medium.woff') format('woff'),
+        url('../fonts/Rajdhani-Bold.ttf') format('truetype');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Rajdhani-Display';
+    font-weight: 500;
+    font-style: normal;
+    src: url('../fonts/Rajdhani-Regular.eot');
+    src: url('../fonts/Rajdhani-Regular.eot?#iefix') format('embeded-opentype'),
+        url('../fonts/Rajdhani-Regular.woff2') format('woff2'), // 최신버전
+        url('../fonts/Rajdhani-Regular.woff') format('woff'),
+        url('../fonts/Rajdhani-Regular.ttf') format('truetype');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Rajdhani-Display';
+    font-weight: 600;
+    font-style: normal;
+    src: url('../fonts/Rajdhani-SemiBold.eot');
+    src: url('../fonts/Rajdhani-SemiBold.eot?#iefix') format('embeded-opentype'),
+        url('../fonts/Rajdhani-SemiBold.woff2') format('woff2'), // 최신버전
+        url('../fonts/Rajdhani-SemiBold.woff') format('woff'),
+        url('../fonts/Rajdhani-SemiBold.ttf') format('truetype');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Rajdhani-Display';
+    font-weight: 700;
+    font-style: normal;
+    src: url('../fonts/Rajdhani-Bold.eot');
+    src: url('../fonts/Rajdhani-Bold.eot?#iefix') format('embeded-opentype'),
+        url('../fonts/Rajdhani-Bold.woff2') format('woff2'), // 최신버전
+        url('../fonts/Rajdhani-Bold.woff') format('woff'),
+        url('../fonts/Rajdhani-Bold.ttf') format('truetype');
+    font-display: swap;
+}
