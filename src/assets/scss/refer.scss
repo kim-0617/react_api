@@ -1,0 +1,51 @@
+.refer__inner {
+    padding-bottom: 200px;
+
+    h2 {
+        font-size: 30px;
+        color: var(--white);
+    }
+}
+
+.refer__list {
+    border: 1px solid var(--bg-dark-border);
+
+    li {
+        border-bottom: 1px solid var(--bg-dark-border);
+
+        a {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            color: var(--white);
+            font-family: var(--font-kor2);
+
+            span {
+                display: inline-block;
+                padding: 10px 15px;
+            }
+
+            .num {
+                flex: 1 1 5%;
+                text-align: center;
+                border-right: 1px solid var(--bg-dark-border);
+            }
+
+            .name {
+                flex: 1 1 20%;
+                border-right: 1px solid var(--bg-dark-border);
+            }
+
+            .desc {
+                flex: 1 1 65%;
+                border-right: 1px solid var(--bg-dark-border);
+            }
+
+            .star {
+                flex: 1 1 20%;
+                text-align: center;
+            }
+        }
+    }
+
+}

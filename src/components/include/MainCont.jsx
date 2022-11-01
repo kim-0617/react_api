@@ -1,14 +1,28 @@
-import React from 'react'
+import React from 'react';
+
+const mainInfo = [
+    { text: "we provide" },
+    { text: "visual coding" },
+    { text: "solutions" },
+    { text: "for you API" },
+];
+
+const MainText = ({ data }) => {
+    return (
+        <div>
+            {data}
+        </div>
+    );
+}
 
 function MainCont() {
     return (
         <section className="cont__main">
             <div className="container">
                 <div className="main__inner">
-                    <div>we provide</div>
-                    <div>visual coding</div>
-                    <div>solutions</div>
-                    <div>for you API</div>
+                    {mainInfo.map((text, index) => {
+                        return <MainText key={index} data={text.text} />
+                    })}
                 </div>
             </div>
         </section>

@@ -7,6 +7,7 @@ function Header() {
             <div className='header__left'>
                 <ul>
                     <li><Link to="/about">About</Link></li>
+                    <li><Link to="/reference">Reference</Link></li>
                 </ul>
             </div>
             <h1 className='header__center'><Link to="/">API SITE</Link></h1>
