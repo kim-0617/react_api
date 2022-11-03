@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect} from 'react'
 import Header from '../layout/Header';
 import Contents from '../layout/Contents';
 import Footer from '../layout/Footer';
@@ -8,12 +8,20 @@ import { ReferCont } from '../include/ReferCont';
 import { Contact } from '../layout/Contact';
 
 export const Reference = () => {
+    const [references, setReferences] = useState([]);
+    useEffect(() => {
+        fetch("https://webstoryboy.github.io/react2022/src/assets/json/refer.json")
+        .then(response => response.json())
+        .then(result => setReferences(result.data.htmlRefer))
+        .catch(error => console.log('error', error));
+    }, []);
+
     return (
         <>
             <Header />
             <Contents>
                 <Title title={["REFERENCE", "BOOK"]} />
-                <ReferCont />
+                {references.length === 0 ? null : <ReferCont result={references} />}
                 <Contact />
             </Contents>
             <Footer />
