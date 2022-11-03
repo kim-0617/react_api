@@ -1,4 +1,4 @@
-import React, { useState, useEffect} from 'react'
+import React, { useState, useEffect } from 'react'
 import Header from '../layout/Header';
 import Contents from '../layout/Contents';
 import Footer from '../layout/Footer';
@@ -10,10 +10,10 @@ import { Contact } from '../layout/Contact';
 export const Reference = () => {
     const [references, setReferences] = useState([]);
     useEffect(() => {
-        fetch("https://webstoryboy.github.io/react2022/src/assets/json/refer.json")
-        .then(response => response.json())
-        .then(result => setReferences(result.data.htmlRefer))
-        .catch(error => console.log('error', error));
+        fetch("https://kim-0617.github.io/react_api/src/utils/reference.json")
+            .then(response => response.json())
+            .then(result => setReferences(result.cssRefer))
+            .catch(error => console.log('error', error));
     }, []);
 
     return (

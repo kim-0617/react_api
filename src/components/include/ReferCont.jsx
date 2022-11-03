@@ -5,10 +5,10 @@ const ReferText = ({ data }) => {
     return (
         <li>
             <a href="/">
-                <span className='num'>{data.id}</span>
+                <span className='num'>{data.num}</span>
                 <span className='name'>{data.title}</span>
                 <span className='desc'>{data.desc}</span>
-                <span className='star'>{data.use}</span>
+                <span className='star'>{data.descStar}</span>
             </a>
         </li>
     );
