@@ -14,3 +14,6 @@ npm install axios
 
 ## gsap 설치
 npm install gsap
+
+## 배포 사이트
+https://cra02.netlify.app/   
