@@ -9,7 +9,7 @@ import { Contact } from '../layout/Contact';
 
 export const Movie = () => {
     const [movies, setMovies] = useState([]);
-    useEffect(() => {;
+    useEffect(() => {
         fetch("https://api.themoviedb.org/3/search/movie?api_key=4dce5e2aa071cda3c95daac64628defc&query=marble&page=1")
             .then(response => response.json())
             .then(result => setMovies(result.results))
@@ -20,7 +20,7 @@ export const Movie = () => {
         <>
             <Header />
             <Contents>
-                <Title title={["Movie", "Reference API"]} />
+                <Title title={["Movie", "Reference API 소개합니다."]} />
                 {movies.length === 0 ? null : <MovieCont movies={movies} />}
                 <Contact />
             </Contents>
