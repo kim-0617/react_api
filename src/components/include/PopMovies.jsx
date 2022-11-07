@@ -1,6 +1,7 @@
 import React from 'react';
 
 const MovieBox = ({ movie, index }) => {
+    if (index > 4) return;
     return (
         <li>
             <a href={`https://www.themoviedb.org/movie/${movie.id}`}>
