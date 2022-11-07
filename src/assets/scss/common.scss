@@ -24,4 +24,45 @@ body {
 }
 
 // cont__contact
-.cont__contact {}
+.cont__contact {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: var(--white);
+    text-transform: uppercase;
+
+    p {
+        font-size: 20px;
+        font-family: var(--font-sub2);
+        margin-bottom: 20px;
+        text-align: center;
+        line-height: 1;
+    }
+
+    h3 {
+        font-size: 9vw;
+        font-family: var(--font-main);
+        text-align: center;
+
+        em {
+            display: block;
+        }
+    }
+
+    a {
+        font-size: 16px;
+        font-family: var(--font-main);
+        border: 1px solid var(--white);
+        border-radius: 5px;
+        color: var(--white);
+        padding: 1vw;
+        transition: all 300ms;
+
+        &:hover {
+            color: var(--balck);
+            background-color: var(--white);
+        }
+    }
+}

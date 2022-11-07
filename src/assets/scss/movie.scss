@@ -1,0 +1,132 @@
+.movie__inner {
+    ul {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding-bottom: 50px;
+
+        li {
+            width: 23%;
+            position: relative;
+
+            em {
+                display: block;
+                margin-bottom: 30px;
+                height: 80px;
+                font-family: var(--font-kor);
+            }
+
+            .title {
+                display: inline-block;
+                padding: 5px 0;
+            }
+
+            .star {
+                background: rgba(255, 255, 255, 0.7);
+                color: #000;
+                position: absolute;
+                left: 10px;
+                top: 10px;
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                text-align: center;
+                line-height: 40px;
+                font-weight: bold;
+            }
+        }
+    }
+
+    a {
+        color: var(--white);
+    }
+}
+
+.movie__search {
+    margin-bottom: 100px;
+
+    .container {
+        position: relative;
+
+        h2 {
+            color: var(--white);
+            font-size: 40px;
+            text-indent: -9999px;
+            height: 0;
+        }
+
+        input {
+            background: var(--black);
+            border: 2px solid var(--white);
+            border-radius: 50px;
+            color: var(--white);
+            width: 100%;
+            padding: 10px 30px;
+            font-family: var(--font-kor2);
+        }
+
+        button {
+            position: absolute;
+            right: 3px;
+            top: 3px;
+            width: 100px;
+            height: 40px;
+            display: inline-block;
+            border-radius: 20px;
+            font-family: var(--font-kor2);
+            cursor: pointer;
+            z-index: 100;
+            border: 0;
+        }
+    }
+
+}
+
+.pop__inner {
+    h2 {
+        color: var(--white);
+        margin-bottom: 20px;
+    }
+
+    ul {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding-bottom: 50px;
+
+        li {
+            width: 23%;
+            position: relative;
+
+            em {
+                display: block;
+                margin-bottom: 30px;
+                height: 80px;
+                font-family: var(--font-kor);
+            }
+
+            .title {
+                display: inline-block;
+                padding: 5px 0;
+            }
+
+            .star {
+                background: rgba(255, 255, 255, 0.7);
+                color: #000;
+                position: absolute;
+                left: 10px;
+                top: 10px;
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                text-align: center;
+                line-height: 40px;
+                font-weight: bold;
+            }
+        }
+    }
+
+    a {
+        color: var(--white);
+    }
+}
