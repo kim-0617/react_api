@@ -39,6 +39,9 @@ export const PopMovies = ({ movies }) => {
           <Swiper
             pagination={true}
             // navigation={true}
+            spaceBetween={30}
+            slidesPerView={5}
+            slidesPerGroup={5}
             autoplay={{
               delay: 2000,
               disableOnInteraction: false,
