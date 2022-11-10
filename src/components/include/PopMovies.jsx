@@ -1,15 +1,15 @@
 import React from "react";
 
-// Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
 import "swiper/css";
-import "swiper/css/navigation";
+import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
+import "swiper/css/bundle";
 
 // import required modules
-import { Autoplay, Navigation, Pagination } from "swiper";
+import { Autoplay, EffectCoverflow, Pagination } from "swiper";
 
 const MovieBox = ({ movie, index }) => {
   return (
@@ -32,21 +32,29 @@ const MovieBox = ({ movie, index }) => {
 
 export const PopMovies = ({ movies }) => {
   return (
-    <div className="pop__inner">
+    <div className="cont__pop">
       <div className="container">
         <h2>오늘의 인기영화</h2>
         <div className="pop__inner">
           <Swiper
-            pagination={true}
-            // navigation={true}
-            spaceBetween={30}
-            slidesPerView={5}
-            slidesPerGroup={5}
+            effect={"coverflow"}
+            grabCursor={true}
+            centeredSlides={true}
+            slidesPerView={"auto"}
+            coverflowEffect={{
+              rotate: 50,
+              stretch: 0,
+              depth: 100,
+              modifier: 1,
+              slideShadows: true,
+            }}
+            initialSlide="5"
             autoplay={{
-              delay: 2000,
+              delay: 3000,
               disableOnInteraction: false,
             }}
-            modules={[Pagination, Navigation, Autoplay]}
+            pagination={true}
+            modules={[EffectCoverflow, Pagination, Autoplay]}
             className="mySwiper"
           >
             {movies.map((movie, index) => {

@@ -82,39 +82,31 @@
   }
 }
 
-.pop__inner {
+.cont__pop {
   h2 {
     color: var(--white);
     margin-bottom: 20px;
   }
 
-  div.swiper {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+  .swiper {
+    width: 100%;
+    padding-top: 50px;
     padding-bottom: 50px;
 
     .swiper-pagination-bullet {
       background: var(--white);
     }
 
-    // .swiper-slide-active,
-    // .swiper-slide-active + .swiper-slide,
-    // .swiper-slide-active + .swiper-slide + .swiper-slide,
-    // .swiper-slide-active + .swiper-slide + .swiper-slide + .swiper-slide,
-    // .swiper-slide-active
-    //   + .swiper-slide
-    //   + .swiper-slide
-    //   + .swiper-slide
-    //   + .swiper-slide {
-    //   opacity: 1 !important;
-    // }
-
     .swiper-slide {
-      position: relative;
+      background-position: center;
+      background-size: cover;
+      width: 300px;
+      height: 500px;
 
-      img {
-        height: 300px !important;
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 500px;
       }
 
       em {
