@@ -24,12 +24,9 @@ export const YoutubeCont = ({ youtubes }) => {
       <div className="container">
         <div className="youtube__inner">
           <ul>
-            {youtubes.length &&
-              youtubes.map((youtube, index) => {
-                return (
-                  <YoutubeBox key={index} youtube={youtube} index={index} />
-                );
-              })}
+            {youtubes.map((youtube, index) => {
+              return <YoutubeBox key={index} youtube={youtube} index={index} />;
+            })}
           </ul>
         </div>
       </div>

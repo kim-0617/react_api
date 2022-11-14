@@ -1,3 +1,7 @@
+#main {
+  position: relative;
+}
+
 .cont__unsplash {
   ul {
     column-count: 4;
@@ -74,19 +78,28 @@
   }
 
   .swiper {
-    width: 100%;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    width: 350px;
+    height: 430px;
 
     .swiper-pagination-bullet {
       background: var(--white);
     }
 
+    .swiper-horizontal > .swiper-pagination-bullets,
+    .swiper-pagination-bullets.swiper-pagination-horizontal,
+    .swiper-pagination-custom,
+    .swiper-pagination-fraction {
+      bottom: -70px !important;
+    }
+
     .swiper-slide {
-      background-position: center;
-      background-size: cover;
-      width: 300px;
-      height: 500px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 18px;
+      font-size: 22px;
+      font-weight: bold;
+      color: #fff;
 
       .swiper-slide img {
         display: block;
@@ -128,14 +141,18 @@
 }
 
 .cont__unsplashBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   h2 {
     color: var(--white);
-    margin: 150px auto 20px 100px;
+    text-align: center;
+    margin: 25px 0;
   }
 
   .unsplash__btn {
     display: flex;
-    margin-left: 100px;
     li {
       border: 1px solid #fff;
       padding: 5px 10px;

@@ -13,7 +13,7 @@ const SearchBtn = ({ data, func }) => {
   return <li onClick={func}>{data.name}</li>;
 };
 
-export const UnsplashBtn = ({ onSearch }) => {
+export const YoutubeBtn = ({ onSearch }) => {
   const onClickSearch = useCallback(
     (e) => {
       onSearch(e.target.textContent);
@@ -22,9 +22,9 @@ export const UnsplashBtn = ({ onSearch }) => {
   );
 
   return (
-    <section className="cont__unsplashBtn">
+    <section className="cont__youtubeBtn">
       <h2>오늘의 추천 키워드!</h2>
-      <ul className="unsplash__btn">
+      <ul className="youtube__btn">
         {keyword.map((v, index) => (
           <SearchBtn key={v + index} func={onClickSearch} data={v} />
         ))}

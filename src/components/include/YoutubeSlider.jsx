@@ -4,12 +4,11 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
 import "swiper/css";
-import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 import "swiper/css/bundle";
 
 // import required modules
-import { Autoplay, EffectCoverflow, Pagination } from "swiper";
+import { Autoplay, Pagination } from "swiper";
 
 const YoutubeBox = ({ youtube, index }) => {
   return (
@@ -29,33 +28,28 @@ export const YoutubeSlider = ({ youtubes }) => {
   return (
     <div className="cont__youtubeRandom">
       <div className="container">
-        <h2>볼만한거 없을까?</h2>
+        <h2>볼만한거 없을까 ?</h2>
         <div className="youtubeRandom__inner">
           <Swiper
-            effect={"coverflow"}
             grabCursor={true}
-            centeredSlides={true}
-            slidesPerView={"auto"}
-            coverflowEffect={{
-              rotate: 50,
-              stretch: 0,
-              depth: 100,
-              modifier: 1,
-              slideShadows: true,
-            }}
-            initialSlide="5"
+            slidesPerView={3}
+            spaceBetween={30}
+            slidesPerGroup={3}
+            effect={"creative"}
+            loopFillGroupWithBlank={true}
+            loop={true}
             autoplay={{
               delay: 3000,
               disableOnInteraction: false,
             }}
             pagination={true}
-            modules={[EffectCoverflow, Pagination, Autoplay]}
+            modules={[Pagination, Autoplay]}
             className="mySwiper"
           >
             {youtubes.map((youtube, index) => {
               return (
-                <SwiperSlide key={index}>
-                  <YoutubeBox key={index} youtube={youtube} index={index} />
+                <SwiperSlide key={index * Math.random()}>
+                  <YoutubeBox youtube={youtube} index={index} />
                 </SwiperSlide>
               );
             })}
