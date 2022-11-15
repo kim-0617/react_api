@@ -12,11 +12,11 @@ import { Contact } from "../layout/Contact";
 import { useState } from "react";
 
 // tmp
-import dummy from "../../utils/dummy.json";
+// import dummy from "../../utils/dummy.json";
 
 export const Youtube = () => {
-  const [youtubes, setYoutubes] = useState(dummy.items);
-  const [randomVideos, setrandomVideos] = useState(dummy.items);
+  const [youtubes, setYoutubes] = useState([]);
+  const [randomVideos, setrandomVideos] = useState([]);
   const search = async (query) => {
     await fetch(
       `https://www.googleapis.com/youtube/v3/search?part=snippet&q=${query}&key=AIzaSyDJeI0388YoRP3fpYU1B_GOG4UtfeWFhdw&maxResults=20&type=video`
@@ -26,31 +26,31 @@ export const Youtube = () => {
       .catch((error) => console.log("error", error));
   };
 
-  // useEffect(() => {
-  //   async function fetchMovie() {
-  //     await fetch(
-  //       "https://www.googleapis.com/youtube/v3/search?part=snippet&q=webstoryboy&key=AIzaSyDJeI0388YoRP3fpYU1B_GOG4UtfeWFhdw&maxResults=20&type=video"
-  //     )
-  //       .then((response) => response.json())
-  //       .then((result) => {
-  //         setYoutubes(result.items);
-  //       })
-  //       .catch((error) => console.log("error", error));
-  //   }
+  useEffect(() => {
+    async function fetchMovie() {
+      await fetch(
+        "https://www.googleapis.com/youtube/v3/search?part=snippet&q=webstoryboy&key=AIzaSyDJeI0388YoRP3fpYU1B_GOG4UtfeWFhdw&maxResults=20&type=video"
+      )
+        .then((response) => response.json())
+        .then((result) => {
+          setYoutubes(result.items);
+        })
+        .catch((error) => console.log("error", error));
+    }
 
-  //   async function fetchRandomMovie() {
-  //     await fetch(
-  //       "https://www.googleapis.com/youtube/v3/search?part=snippet&key=AIzaSyDJeI0388YoRP3fpYU1B_GOG4UtfeWFhdw&maxResults=20&type=video"
-  //     )
-  //       .then((response) => response.json())
-  //       .then((result) => {
-  //         setrandomVideos(result.items);
-  //       })
-  //       .catch((error) => console.log("error", error));
-  //   }
-  //   fetchMovie();
-  //   fetchRandomMovie();
-  // }, []);
+    async function fetchRandomMovie() {
+      await fetch(
+        "https://www.googleapis.com/youtube/v3/search?part=snippet&key=AIzaSyDJeI0388YoRP3fpYU1B_GOG4UtfeWFhdw&maxResults=20&type=video"
+      )
+        .then((response) => response.json())
+        .then((result) => {
+          setrandomVideos(result.items);
+        })
+        .catch((error) => console.log("error", error));
+    }
+    fetchMovie();
+    fetchRandomMovie();
+  }, []);
 
   return (
     <>
