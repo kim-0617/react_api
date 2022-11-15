@@ -1,0 +1,67 @@
+#cont1 {
+  margin-top: 240px;
+}
+
+#cont1 img {
+  width: 100%;
+  display: block;
+  margin-bottom: 62px;
+  border-radius: 5px;
+}
+
+#cont1 .text {
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+
+#cont2 {
+  margin-top: 240px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#cont2 figure {
+  width: 58%;
+}
+
+#cont2 img {
+  width: 100%;
+  display: block;
+  border-radius: 5px;
+}
+
+#cont2 .text {
+  width: 38%;
+}
+
+#cont3 {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 370px;
+}
+
+#cont3 figure {
+  width: 53%;
+}
+
+#cont3 img {
+  display: block;
+  border-radius: 5px;
+}
+
+#cont3 .text {
+  width: 43%;
+}
+
+.title {
+  margin-bottom: 30px;
+  font-size: 18px;
+  color: var(--white);
+}
+
+.cont {
+  font-size: 18px;
+  line-height: 1.6;
+  word-break: keep-all;
+  color: var(--white);
+}

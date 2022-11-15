@@ -78,8 +78,7 @@
   }
 
   .swiper {
-    width: 350px;
-    height: 430px;
+    height: 600px;
 
     .swiper-pagination-bullet {
       background: var(--white);
@@ -100,11 +99,14 @@
       font-size: 22px;
       font-weight: bold;
       color: #fff;
+      height: 100%;
 
-      .swiper-slide img {
+      img {
         display: block;
-        width: 100%;
+        width: 350px;
         height: 500px;
+        object-fit: cover;
+        border-radius: 20px;
       }
 
       em {
@@ -145,10 +147,11 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  margin-top: 80px;
   h2 {
     color: var(--white);
     text-align: center;
-    margin: 25px 0;
+    margin: 40px 0px 20px 0px;
   }
 
   .unsplash__btn {

@@ -14,7 +14,7 @@ const YoutubeBox = ({ youtube, index }) => {
   return (
     <a href={`https://www.youtube.com/watch?v=${youtube.id.videoId}`}>
       <img
-        src={youtube.snippet.thumbnails.high.url}
+        src={youtube.snippet.thumbnails.medium.url}
         alt={youtube.snippet.title}
       />
       <em>
@@ -49,7 +49,11 @@ export const YoutubeSlider = ({ youtubes }) => {
             {youtubes.map((youtube, index) => {
               return (
                 <SwiperSlide key={index * Math.random()}>
-                  <YoutubeBox youtube={youtube} index={index} />
+                  <YoutubeBox
+                    key={index * Math.random()}
+                    youtube={youtube}
+                    index={index}
+                  />
                 </SwiperSlide>
               );
             })}

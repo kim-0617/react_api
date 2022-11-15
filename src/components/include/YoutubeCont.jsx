@@ -6,7 +6,7 @@ const YoutubeBox = ({ youtube, index }) => {
       <a href={`https://www.youtube.com/watch?v=${youtube.id.videoId}`}>
         {
           <img
-            src={youtube.snippet.thumbnails.high.url}
+            src={youtube.snippet.thumbnails.medium.url}
             alt={youtube.snippet.title}
           />
         }

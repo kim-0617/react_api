@@ -33,7 +33,7 @@ export const UnsplashSlider = ({ random }) => {
             grabCursor={true}
             centeredSlides={true}
             autoplay={{
-              delay: 3000,
+              delay: 2000,
               disableOnInteraction: false,
             }}
             pagination={true}
