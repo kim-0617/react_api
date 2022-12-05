@@ -24,7 +24,7 @@ export const Movie = () => {
 
   useEffect(() => {
     fetch(
-      "https://api.themoviedb.org/3/search/movie?api_key=4dce5e2aa071cda3c95daac64628defc&query=super&page=1"
+      "https://api.themoviedb.org/3/search/movie?api_key=4dce5e2aa071cda3c95daac64628defc&query=hero&page=1"
     )
       .then((response) => response.json())
       .then((result) => setMovies(result.results))

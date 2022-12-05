@@ -15,9 +15,6 @@ const UnsplashBox = ({ image, index }) => {
   return (
     <a href={image.links.html}>
       <img src={image.urls.raw} alt={image.alt_description} />
-      <em>
-        <span className="title">{image.alt_description}</span>
-      </em>
     </a>
   );
 };

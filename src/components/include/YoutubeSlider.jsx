@@ -6,11 +6,13 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/bundle";
+import "swiper/css/free-mode";
 
 // import required modules
-import { Autoplay, Pagination } from "swiper";
+import { Autoplay, Pagination, FreeMode } from "swiper";
 
 const YoutubeBox = ({ youtube, index }) => {
+  console.log(youtube.snippet.thumbnails);
   return (
     <a href={`https://www.youtube.com/watch?v=${youtube.id.videoId}`}>
       <img
@@ -18,7 +20,11 @@ const YoutubeBox = ({ youtube, index }) => {
         alt={youtube.snippet.title}
       />
       <em>
-        <span className="title">{youtube.snippet.title}</span>
+        <span className="title">
+          {youtube.snippet.title.length > 23
+            ? youtube.snippet.title.slice(0, 23) + " . . ."
+            : youtube.snippet.title}
+        </span>
       </em>
     </a>
   );
@@ -34,16 +40,15 @@ export const YoutubeSlider = ({ youtubes }) => {
             grabCursor={true}
             slidesPerView={3}
             spaceBetween={30}
-            slidesPerGroup={3}
-            effect={"creative"}
-            loopFillGroupWithBlank={true}
-            loop={true}
+            freeMode={true}
             autoplay={{
               delay: 3000,
               disableOnInteraction: false,
             }}
-            pagination={true}
-            modules={[Pagination, Autoplay]}
+            pagination={{
+              clickable: true,
+            }}
+            modules={[Pagination, Autoplay, FreeMode]}
             className="mySwiper"
           >
             {youtubes.map((youtube, index) => {
